@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Porlane;
+  src: url('./assets/porlane/Porlane.ttf');
+}
+
 body {
   background-color: #152a21;
   /* color: white; */
@@ -111,11 +116,11 @@ body {
 .title {
   color: white;
   /* text-align: center; */
-  font-family: 'Tanker', sans-serif;
-  font-size: 300px;
+  font-family: 'Porlane', sans-serif;
+  font-size: 449.78px;
   overflow: hidden;
   width: 100%;
-  height: 300px;
+  height: 350px;
   line-height: auto;
 
 }
@@ -131,7 +136,7 @@ body {
   text-indent: 0px;
   white-space: nowrap;
   position: relative;
-  top: 150px;
+  top: 200px;
 
 
 
@@ -191,4 +196,35 @@ body {
   vertical-align: baseline;
   letter-spacing:-0.854583px;
   border-radius: 15px;
+}
+
+/* About Page------------------------------------------------------ */
+.horizontal-line{
+  width: 100%;
+  height: 1px;
+  background-color: hsla(0,0%,100%,.2);
+  margin-bottom: 2%;
+}
+
+#aboutPage{
+  margin: 2%;
+}
+h2{
+  
+  font-family: 'Porlane', sans-serif;
+  color: white;
+  font-size: 78px;
+}
+
+.about-box{
+  font-family: 'Clash Display', sans-serif;
+  font-size: 35px;
+  line-height: 39.5807px;
+  color: white;
+}
+
+/* Work Page-====================================================== */
+
+#workPage{
+  margin: 2%;
 }
