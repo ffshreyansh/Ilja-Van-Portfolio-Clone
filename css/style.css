@@ -25,7 +25,57 @@ body {
   
 
 }
+.color-mode-btn {
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  /* padding: 13px 30px 13px; */
+  outline: 0;
+  border-color: transparent;
+  cursor: pointer;
+  /* position: relative; */
+  /* background-color: rgba(0, 0, 0, 0); */
 
+}
+
+.color-mode-btn:hover{
+  border: 1px solid #198754;
+  --bs-btn-padding-x: 2rem;
+}
+.color-mode-btn i {
+  visibility: hidden;
+  /* font-size: 13px; */
+  transition: 0.2s;
+  /* position: relative; */
+  right: 35px;
+  top: 21px;
+  transition: transform -3;
+}
+
+.color-mode-btn div {
+  transition: transform 0.8s;
+}
+
+.color-mode-btn:hover div {
+  transform: translateX(6px);
+  
+}
+.color-mode-btn::after {
+
+  width: 100%;
+  z-index: -1;
+  /* position: absolute; */
+  height: 100%;
+  /* top: 7px;
+  left: 7px; */
+}
+
+.color-mode-btn:hover i {
+  --bs-btn-padding-x: 3rem;
+  transform: rotateX('30 degree');
+  visibility: visible;
+  transform: translateX(-6px);
+}
 
 /* Color Mode Button ========================================== */
 .hamburger-icon {
@@ -125,6 +175,9 @@ body {
   letter-spacing:-0.854583px;
   border-radius: 15px;
 
+}
+::-webkit-scrollbar{
+  display: none;
 }
 
 .image-box {
